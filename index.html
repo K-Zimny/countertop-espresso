@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Counter Space for Espresso — A Modest Proposal</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <h1>Small footprint.<br />Kept clean.</h1>
+        <p class="hero-lede">One spot on the counter. I’ll keep it that way.</p>
+        <div class="reasons-btn-wrap">
+          <button
+            type="button"
+            class="reasons-btn"
+            id="cupBtn"
+            aria-label="Show another reason"
+          >
+            Tap for reasons for counter space
+          </button>
+        </div>
+        <div id="reasonDisplay" class="reason-display" aria-live="polite"></div>
+      </header>
+
+      <section class="panel statement">
+        <p class="statement-text">
+          I live here too. I think as a resident of this household I should get
+          to have at least a little counter space—one spot. I’m not asking for
+          the whole kitchen. I’m asking for one small place that’s mine, and
+          I’ll take care of it. I think that’s fair.
+        </p>
+      </section>
+
+      <section class="panel image-section" aria-labelledby="concept-heading">
+        <h2 id="concept-heading">The spot</h2>
+        <figure class="concept-figure">
+          <img
+            src="expresso-concept.png"
+            alt="A polished chrome Lucca espresso machine with wooden accents on a dark kitchen countertop with grey tiled backsplash."
+            class="concept-img"
+            width="800"
+            height="600"
+          />
+          <b>Note: Image not actual sized. Enlarged to show detail.</b>
+          <figcaption>
+            One spot on the counter — compact, clean, and all yours.
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="panel">
+        <h2>Footprint: how much space</h2>
+        <p>
+          One defined spot. The machine I’m looking at (LUCCA Tempo) is
+          <strong>10.25″ × 13″</strong> — under 1 square foot. You can verify
+          the numbers below.
+        </p>
+        <div class="row">
+          <label
+            >Width (in):
+            <input id="width" type="number" value="10.25" min="1" step="0.25"
+          /></label>
+          <label
+            >Depth (in):
+            <input id="depth" type="number" value="13" min="1" step="0.25"
+          /></label>
+          <button id="calc" type="button">Calculate</button>
+        </div>
+        <div id="calcResult" class="result" aria-live="polite"></div>
+      </section>
+
+      <section class="panel machine-card">
+        <h2>The machine</h2>
+        <p class="machine-name">
+          <a
+            href="https://clivecoffee.com/products/lucca-tempo-espresso-machine?ref=espresso-machines"
+            target="_blank"
+            rel="noopener"
+            >LUCCA Tempo</a
+          >
+          — compact, 10.25″ × 13″. One spot. Clive Coffee.
+        </p>
+        <dl class="machine-specs">
+          <dt>Footprint</dt>
+          <dd>10.25″ × 13″</dd>
+          <dt>Height</dt>
+          <dd>14.45″</dd>
+          <dt>Warranty</dt>
+          <dd>3 years</dd>
+        </dl>
+        <a
+          href="https://clivecoffee.com/products/lucca-tempo-espresso-machine?ref=espresso-machines"
+          target="_blank"
+          rel="noopener"
+          class="machine-link"
+          >Full specs at Clive Coffee →</a
+        >
+      </section>
+
+      <section class="reasons panel">
+        <h2>Keeping it clean</h2>
+        <ul class="reason-list">
+          <li>
+            <strong>One spot</strong> — Machine stays in one place. No sprawl.
+          </li>
+          <li>
+            <strong>Mat or drip tray</strong> — Under the machine so the counter
+            is protected.
+          </li>
+          <li>
+            <strong>Wipe down after every use</strong> — No mess left on the
+            counter.
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel tips">
+        <h2>Why it works</h2>
+        <ul>
+          <li>
+            One small rectangle on the counter — under a square foot. You keep
+            the rest of the space.
+          </li>
+          <li>
+            A mat or drip tray protects the surface. Wipe-down after every use
+            means no mess left behind.
+          </li>
+          <li>
+            One spot, no sprawl. The machine stays put; the kitchen stays
+            uncluttered.
+          </li>
+        </ul>
+      </section>
+
+      <footer>
+        <p>
+          Made to help you ask respectfully. Deploy to GitHub Pages and share
+          the link — or print from any device.
+        </p>
+      </footer>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
